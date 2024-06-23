@@ -34,22 +34,27 @@ main {
   max-width: 1300px;
   margin-inline: auto;
   margin-top: 16px;
+  display: flex;
+  gap: 64px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .country-card {
   display: inline-block;
   width: 250px;
   border-radius: 4px;
-  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   padding-bottom: 10px;
-  transition: transform 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
   text-decoration: none;
   color: #000000;
 }
 
 .country-card:hover {
   transform: scale(1.004);
+  box-shadow: 6px 6px 6px 2px rgba(0, 0, 0, 0.1);
 }
 
 .country-card img {
@@ -61,7 +66,7 @@ main {
 }
 
 .card-title {
-  font-size: 24px;
+  /* font-size: 24px; */
   text-align: center;
   padding-block: 7px;
   text-decoration-line: underline;
@@ -71,5 +76,11 @@ main {
   width: 80%;
   margin-inline: auto;
   padding-block: 3px;
-  font-size: 13x;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .countries-container {
+    justify-content: center;
+  }
 }
