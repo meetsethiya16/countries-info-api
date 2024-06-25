@@ -5,11 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countries</title>
-    <script src="country.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="country.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,regular,600,800" rel="stylesheet" />
+    <script src="country.js" defer></script>
 </head>
 
 <body>
-    <h1>Country</h1>
+    <header class="header-container">
+        <div class="header-content">
+            <h1 class="title">Where in the world?</h1>
+            <p><i class="fa-regular fa-moon"></i>&nbsp;&nbsp;Dark Mode</p>
+        </div>
+    </header>
+    <main>
+        <a href="#" class="back-button"><i class="fa-solid fa-arrow-left"></i>&nbsp;&nbsp;Back</a>
+        <div class="country-details">
+            <img src="" alt="">
+            <div class="details-text-container">
+                <h1>Iceland</h1>
+                <div class="details-text">
+                    <p><b>Native Name: </b><span class="native-name"></span></p>
+                    <p><b>Population: </b><span class="population"></span></p>
+                    <p><b>Region: </b><span class="region"></span></p>
+                    <p><b>Sub Region: </b><span class="sub-region"></span></p>
+                    <p><b>Capital: </b><span class="capital"></span></p>
+                    <p><b>Top Level Domain: </b><span class="top-level-domain"></span></p>
+                    <p><b>Currencies: </b><span class="currencies"></span></p>
+                    <p><b>Languages: </b><span class="languages"></span></p>
+                </div>
+                <div class="border-countries">
+                    <p><b>Border Countries: </b>&nbsp;<a href="#">France</a><a href="#">Germany</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
