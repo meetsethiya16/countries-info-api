@@ -55,7 +55,3 @@ searchInput.addEventListener("input", (e) => {
   // console.log(filteredCountries);
   renderCountries(filteredCountries);
 });
-
-themeChanger.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-});
